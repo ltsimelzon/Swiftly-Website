@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" role="img" aria-label="Swiftly">
+  <!-- Placeholder mark: three swept blades reading as speed + an S.
+       TODO: replace this file with your own team logo (keep the filename
+       images/logo.svg, or update the two <img src> tags in index.html). -->
+  <defs>
+    <linearGradient id="swiftlyGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22E0C8"/>
+      <stop offset="0.55" stop-color="#3CEBD6"/>
+      <stop offset="1" stop-color="#FFB020"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0.75" y="0.75" width="38.5" height="38.5" rx="11" fill="#0B0D12" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+
+  <g fill="url(#swiftlyGrad)">
+    <path d="M27.5 9.5 14.2 9.5 10.5 15.2 23.8 15.2 Z"/>
+    <path d="M30.0 17.1 12.9 17.1 9.2 22.8 26.3 22.8 Z" opacity="0.82"/>
+    <path d="M24.4 24.7 11.4 24.7 7.7 30.4 20.7 30.4 Z" opacity="0.6"/>
+  </g>
+</svg>

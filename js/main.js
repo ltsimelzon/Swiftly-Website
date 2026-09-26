@@ -96,6 +96,20 @@
   }
 
 
+  /* ---------- Countdown ---------------------------------------------------- */
+  /* <span data-countdown="2027-01-22"> becomes the whole days left until that
+     date, then counts up like any other stat. Never goes below zero. */
+  document.querySelectorAll('[data-countdown]').forEach(function (el) {
+    var p = el.dataset.countdown.split('-');
+    var target = new Date(+p[0], +p[1] - 1, +p[2]);
+    var now = new Date();
+    var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    var days = Math.max(0, Math.round((target - today) / 86400000));   // round absorbs DST shifts
+    el.dataset.count = String(days);
+    el.textContent = String(days);
+  });
+
+
   /* ---------- Number count-up --------------------------------------------- */
   /* Any <span data-count="20" data-decimals="0"> animates up to that value.
      The element's existing text is the fallback if scripting is unavailable. */
@@ -158,5 +172,16 @@
     }, { rootMargin: '-45% 0px -50% 0px' });
     sections.forEach(function (s) { spy.observe(s); });
   }
+
+
+  /* ---------- The road ahead ---------------------------------------------- */
+  /* Each stage heading opens and closes its description. */
+  document.querySelectorAll('#road .tl').forEach(function (stage) {
+    var btn = stage.querySelector('.tl__toggle');
+    btn.addEventListener('click', function () {
+      var open = stage.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', String(open));
+    });
+  });
 
 })();

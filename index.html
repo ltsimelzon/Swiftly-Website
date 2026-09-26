@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Swiftly — STEM Racing Team</title>
 
-<meta name="description" content="Swiftly is a six-strong STEM Racing team. We design, simulate, machine and race a CO2-powered miniature Formula 1 car — and we intend to do it differently.">
+<meta name="description" content="Swiftly is a team of six A Level students competing in STEM Racing — designing, building and racing a CO2-powered miniature Formula 1 car.">
 <meta name="theme-color" content="#07080B">
 
 <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
@@ -13,6 +13,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
+<!-- Flags that scripting is on, so the road ahead starts closed.
+     Without JS every stage is simply shown open. -->
+<script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
@@ -41,10 +44,9 @@
 
     <nav class="nav__links" id="navLinks" aria-label="Main">
       <a href="#team">The Team</a>
-      <a href="#approach">Our Approach</a>
       <a href="#car">The Car</a>
       <a href="#competition">The Competition</a>
-      <a href="#ambition">Ambition</a>
+      <a href="#ambition">Road Ahead</a>
       <a href="#contact">Contact</a>
     </nav>
 
@@ -73,19 +75,21 @@
       </h1>
 
       <p class="lede reveal">
-        We are six engineers building one car. Twenty metres of track will settle part of it —
-        the rest is settled by how well we design, machine, test and argue our way there.
+        We are a team of six A Level students passionate about design and dedicated to overcoming
+        the diverse set of challenges this competition will demand. There is much more than just
+        20 metres of racetrack standing between us and the regional final — here you can find out
+        who we are and how we plan to take these challenges on.
       </p>
 
       <div class="hero__actions reveal">
-        <a class="btn btn--primary" href="#approach">How we work <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
-        <a class="btn btn--ghost" href="#team">Meet the team</a>
+        <a class="btn btn--primary" href="#team">Meet the team <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+        <a class="btn btn--ghost" href="#car">The car</a>
       </div>
 
       <p class="hero__meta reveal">
-        <span class="chip">Six members</span>
-        <span class="chip">One car</span>
-        <span class="chip">No shortcuts</span>
+        <span class="chip">Dedication</span>
+        <span class="chip">Work ethic</span>
+        <span class="chip">Quality</span>
       </p>
     </div>
 
@@ -107,8 +111,9 @@
 <section class="stats" id="numbers">
   <div class="wrap stats__grid">
     <div class="stat reveal">
-      <span class="stat__value"><span data-count="6" data-decimals="0">6</span></span>
-      <span class="stat__label">Engineers</span>
+      <!-- Days left is worked out live in main.js from data-countdown; 118 is the fallback -->
+      <span class="stat__value"><span data-countdown="2027-01-22" data-decimals="0">118</span><em class="word">days</em></span>
+      <span class="stat__label">To the regional final</span>
     </div>
     <div class="stat reveal">
       <span class="stat__value"><span data-count="20" data-decimals="0">20</span><em>m</em></span>
@@ -130,36 +135,43 @@
   <div class="wrap">
     <header class="shead reveal">
       <p class="shead__kicker">01 — Who we are</p>
-      <h2 class="shead__title">This is Swiftly</h2>
+      <h2 class="shead__title">Team Swiftly</h2>
       <p class="shead__sub">
-        Six of us, one workshop, and a car that does not exist yet. That is the interesting part.
+        Six of us working together out of shared ambition and a commitment to a quality process
+        and a quality product.
       </p>
     </header>
 
     <div class="about__grid">
       <div class="about__copy reveal">
         <p class="lede">
-          Swiftly is a STEM Racing team. We design, simulate, machine and race a miniature
-          CO<sub>2</sub>-powered Formula&nbsp;1 car — and we are setting out to do it properly
-          rather than quickly.
+          As long-time friends, the six of us were planning Team Swiftly long before the
+          competition started. Between us we have hands-on experience designing planes, building
+          cars and other electronics projects outside of GCSE and A Level Design, so this
+          competition means a lot to us.
         </p>
         <p>
-          Most of what decides this competition happens long before race day. The car is judged
-          against a technical regulation measured in millimetres and grams. The design is
-          interrogated by engineers who want to see the CAD, the analysis and the toolpaths. The
-          project is judged on how it was run. We would rather be strong across all of that than
-          fast and thin.
+          That meant that as soon as Team Swiftly was officially formed, we already had a sense of
+          direction. A large part of the challenge in STEM Racing is organisation and time
+          management, because every aspect of design, production, marketing and funding is our own
+          responsibility.
         </p>
         <p>
-          So we are building the team around evidence: simulate before we cut, measure every
-          change, write down what we learn, and never carry a decision we cannot defend. Six
-          people is small enough that everyone owns something real and large enough that nothing
-          gets dropped.
+          This is why most of what decides this competition happens long before race day, and a
+          large portion of teams drop out before even producing a car because of the workload. We
+          have to work within strict technical regulations that govern our car's features, size
+          and shape, and document every stage of development for the judges, who want to see our
+          CAD and the reasoning behind every decision.
+        </p>
+        <p>
+          The project is judged on how it was run just as much as on how the final car performs,
+          and our team ethic is that we would rather be strong across all of that than fast but
+          lazy and thin.
         </p>
       </div>
 
       <aside class="roster reveal">
-        <h3 class="roster__title">The six</h3>
+        <h3 class="roster__title">The Team</h3>
         <ol class="roster__list">
           <li><span class="roster__n">01</span><span class="roster__name">Leo Tsimelzon</span></li>
           <li><span class="roster__n">02</span><span class="roster__name">Rohan Konar-Thakkar</span></li>
@@ -173,69 +185,18 @@
   </div>
 </section>
 
-<!-- ============ OUR APPROACH ============ -->
-<section class="section section--alt" id="approach">
-  <div class="wrap">
-    <header class="shead reveal">
-      <p class="shead__kicker">02 — How we work</p>
-      <h2 class="shead__title">Six rules we hold ourselves to</h2>
-      <p class="shead__sub">
-        Anyone can call themselves innovative. These are the working habits we are actually
-        committing to — and the ones we expect to be held to.
-      </p>
-    </header>
-
-    <ol class="steps">
-      <li class="step reveal">
-        <span class="step__n">01</span>
-        <h3>Simulate before we cut</h3>
-        <p>Material is slow and finite; compute is fast and cheap. Every shape earns its place in
-          analysis before it earns time on the machine.</p>
-      </li>
-      <li class="step reveal">
-        <span class="step__n">02</span>
-        <h3>Change one thing at a time</h3>
-        <p>A car that got faster for six reasons at once has taught us nothing. Small, isolated
-          changes are the only ones we can actually learn from.</p>
-      </li>
-      <li class="step reveal">
-        <span class="step__n">03</span>
-        <h3>Design for the machine</h3>
-        <p>A render is not a car. If a surface cannot be reached by a cutter or held without
-          flexing, it is not a design — it is a wish.</p>
-      </li>
-      <li class="step reveal">
-        <span class="step__n">04</span>
-        <h3>Chase the whole scoresheet</h3>
-        <p>Speed is one category among several. The portfolio, the presentation and the pit
-          display are engineering problems too, and we treat them that way.</p>
-      </li>
-      <li class="step reveal">
-        <span class="step__n">05</span>
-        <h3>Write it down as it happens</h3>
-        <p>Reconstructing a decision three months later loses the reasoning that made it good.
-          The portfolio is a by-product of working properly, not a task at the end.</p>
-      </li>
-      <li class="step reveal">
-        <span class="step__n">06</span>
-        <h3>Defend every decision</h3>
-        <p>If we cannot explain why a part is that shape, it does not go on the car. Judges ask
-          exactly this question, and so should we.</p>
-      </li>
-    </ol>
-  </div>
-</section>
-
 <!-- ============ THE CAR ============ -->
-<section class="section" id="car">
+<section class="section section--alt" id="car">
   <div class="wrap">
     <header class="shead reveal">
-      <p class="shead__kicker">03 — What we are building</p>
+      <p class="shead__kicker">02 — What we are building</p>
       <h2 class="shead__title">The car</h2>
       <p class="shead__sub">
-        A tethered, CO<sub>2</sub>-powered miniature Formula 1 car, machined from an official model
-        block. This is the envelope we design inside — the regulations set the limits, and the
-        interesting work is what we do with what is left.
+        The car we make has to be built from standardised foam and is heavily restricted by the
+        <a class="inline-link" href="https://www.stemracing.co.uk/rules--regs.html" target="_blank" rel="noopener">technical
+        and competition regulations</a>. Most importantly, it is tethered to the track and powered
+        only by the thrust of a pressurised CO<sub>2</sub> canister at its rear — the other
+        regulated characteristics of the car are listed below.
       </p>
     </header>
 
@@ -267,41 +228,96 @@
           <line x1="260" y1="206" x2="244" y2="252"/><text x="242" y="268">Tether line</text>
         </g>
       </svg>
-      <figcaption>Not to scale — a schematic of the main features set out in the regulations.</figcaption>
+      <figcaption>Not to scale — a schematic of the main features set out in the regulations. Our actual design is classified.</figcaption>
     </figure>
 
-    <div class="spec reveal">
-      <h3 class="subhead subhead--tight">The regulation envelope</h3>
-      <dl class="spec__list">
-        <div class="spec__row"><dt>Power</dt><dd>CO<sub>2</sub> cartridge</dd></div>
-        <div class="spec__row"><dt>Guidance</dt><dd>Tethered to a nylon line</dd></div>
-        <div class="spec__row"><dt>Minimum mass</dt><dd>48 g</dd></div>
-        <div class="spec__row"><dt>Wheels</dt><dd>Four, visible from side and above</dd></div>
-        <div class="spec__row"><dt>Wings</dt><dd>Front and rear</dd></div>
-        <div class="spec__row"><dt>Wing span</dt><dd>50 mm minimum</dd></div>
-        <div class="spec__row"><dt>Wing thickness</dt><dd>2–6 mm</dd></div>
-        <div class="spec__row"><dt>Body</dt><dd>Official STEM Racing model block</dd></div>
-        <div class="spec__row"><dt>Manufacture</dt><dd>CNC machining, plus 3D printed parts</dd></div>
-        <div class="spec__row"><dt>Design</dt><dd>3D CAD, with aerodynamic analysis</dd></div>
-      </dl>
-      <p class="note">
-        These figures come from the published technical regulations, which are revised every
-        season. We work from the current rulebook — and so should you, if you are checking us.
+    <div class="spec">
+      <div class="subhead subhead--tight subhead--row reveal">
+        <h3>The regulation envelope</h3>
+        <p class="hint">Hover over a card for details</p>
+      </div>
+
+      <ul class="cardgrid cardgrid--spec">
+        <li class="reveal"><div class="peek peek--spec" tabindex="0">
+          <span class="peek__inner">
+            <span class="peek__face peek__front"><span class="peek__label">Power</span></span>
+            <span class="peek__face peek__back"><span class="peek__label">Power</span><span class="peek__value">CO<sub>2</sub> cartridge</span></span>
+          </span>
+        </div></li>
+        <li class="reveal"><div class="peek peek--spec" tabindex="0">
+          <span class="peek__inner">
+            <span class="peek__face peek__front"><span class="peek__label">Guidance</span></span>
+            <span class="peek__face peek__back"><span class="peek__label">Guidance</span><span class="peek__value">Tethered to a nylon line</span></span>
+          </span>
+        </div></li>
+        <li class="reveal"><div class="peek peek--spec" tabindex="0">
+          <span class="peek__inner">
+            <span class="peek__face peek__front"><span class="peek__label">Minimum mass</span></span>
+            <span class="peek__face peek__back"><span class="peek__label">Minimum mass</span><span class="peek__value">48 g</span></span>
+          </span>
+        </div></li>
+        <li class="reveal"><div class="peek peek--spec" tabindex="0">
+          <span class="peek__inner">
+            <span class="peek__face peek__front"><span class="peek__label">Wheels</span></span>
+            <span class="peek__face peek__back"><span class="peek__label">Wheels</span><span class="peek__value">Four, visible from side and above</span></span>
+          </span>
+        </div></li>
+        <li class="reveal"><div class="peek peek--spec" tabindex="0">
+          <span class="peek__inner">
+            <span class="peek__face peek__front"><span class="peek__label">Wings</span></span>
+            <span class="peek__face peek__back"><span class="peek__label">Wings</span><span class="peek__value">Front and rear</span></span>
+          </span>
+        </div></li>
+        <li class="reveal"><div class="peek peek--spec" tabindex="0">
+          <span class="peek__inner">
+            <span class="peek__face peek__front"><span class="peek__label">Wing span</span></span>
+            <span class="peek__face peek__back"><span class="peek__label">Wing span</span><span class="peek__value">50 mm minimum</span></span>
+          </span>
+        </div></li>
+        <li class="reveal"><div class="peek peek--spec" tabindex="0">
+          <span class="peek__inner">
+            <span class="peek__face peek__front"><span class="peek__label">Wing thickness</span></span>
+            <span class="peek__face peek__back"><span class="peek__label">Wing thickness</span><span class="peek__value">2–6 mm</span></span>
+          </span>
+        </div></li>
+        <li class="reveal"><div class="peek peek--spec" tabindex="0">
+          <span class="peek__inner">
+            <span class="peek__face peek__front"><span class="peek__label">Body</span></span>
+            <span class="peek__face peek__back"><span class="peek__label">Body</span><span class="peek__value">Official STEM Racing model block</span></span>
+          </span>
+        </div></li>
+        <li class="reveal"><div class="peek peek--spec" tabindex="0">
+          <span class="peek__inner">
+            <span class="peek__face peek__front"><span class="peek__label">Manufacture</span></span>
+            <span class="peek__face peek__back"><span class="peek__label">Manufacture</span><span class="peek__value">CNC machining, plus 3D printed parts</span></span>
+          </span>
+        </div></li>
+        <li class="reveal"><div class="peek peek--spec" tabindex="0">
+          <span class="peek__inner">
+            <span class="peek__face peek__front"><span class="peek__label">Design</span></span>
+            <span class="peek__face peek__back"><span class="peek__label">Design</span><span class="peek__value">3D CAD, with aerodynamic analysis</span></span>
+          </span>
+        </div></li>
+      </ul>
+
+      <p class="note reveal">
+        These figures come from the published technical regulations, which are revised every season.
       </p>
     </div>
   </div>
 </section>
 
 <!-- ============ THE COMPETITION ============ -->
-<section class="section section--alt" id="competition">
+<section class="section" id="competition">
   <div class="wrap">
     <header class="shead reveal">
-      <p class="shead__kicker">04 — The challenge</p>
-      <h2 class="shead__title">What we have entered</h2>
+      <p class="shead__kicker">03 — The challenge</p>
+      <h2 class="shead__title">The competition itself</h2>
       <p class="shead__sub">
-        STEM Racing — known as F1 in Schools until 2024 — is a global STEM competition founded in
-        1999 and now running in more than 60 countries, supported by Formula 1. Teams of three to
-        six students design, build, brand and race a miniature car.
+        STEM Racing (known as F1 in Schools until 2024) is a worldwide competition in more than 60
+        countries, endorsed by Formula 1 to drive community engagement with F1 and engineering.
+        Schools around the world submit up to five teams of three to six students to design,
+        build, brand and race a small car with little external help.
       </p>
     </header>
 
@@ -354,64 +370,124 @@
       </svg>
     </figure>
 
-    <h3 class="subhead reveal">Where the points actually are</h3>
-    <div class="cards cards--3">
-      <article class="card reveal">
-        <span class="card__num">01</span>
-        <h3>Specifications &amp; engineering</h3>
-        <p>The car is measured against the regulations in parc fermé with purpose-made gauges, and
-          the design is interrogated in an interview covering CAD, CAM, analysis and machining.</p>
-      </article>
-      <article class="card reveal">
-        <span class="card__num">02</span>
-        <h3>Portfolios &amp; pit display</h3>
-        <p>An engineering portfolio and an enterprise portfolio, judged alongside a pit display the
-          team designs and builds itself.</p>
-      </article>
-      <article class="card reveal">
-        <span class="card__num">03</span>
-        <h3>Presentation &amp; racing</h3>
-        <p>A timed verbal presentation to a panel of judges — and the racing itself, run as
-          knockout rounds where reaction time counts.</p>
-      </article>
+    <div class="subhead subhead--row reveal">
+      <h3>Where points are won</h3>
+      <p class="hint">Hover over a card for details</p>
     </div>
+
+    <ul class="cardgrid cardgrid--points">
+      <li class="reveal"><div class="peek peek--point" tabindex="0">
+        <span class="peek__inner">
+          <span class="peek__face peek__front">
+            <span class="card__num">01</span>
+            <span class="peek__title">Specifications &amp; engineering</span>
+            <span class="peek__cue" aria-hidden="true">Details <svg class="icon"><use href="#i-arrow"></use></svg></span>
+          </span>
+          <span class="peek__face peek__back">
+            <span class="card__num">01 — Specifications &amp; engineering</span>
+            <span class="peek__text">The car is scrutinised against the regulations in parc fermé, and the design is
+              questioned in an interview covering every aspect of production: CAD, CAM, analysis and
+              machining.</span>
+          </span>
+        </span>
+      </div></li>
+      <li class="reveal"><div class="peek peek--point" tabindex="0">
+        <span class="peek__inner">
+          <span class="peek__face peek__front">
+            <span class="card__num">02</span>
+            <span class="peek__title">Portfolios &amp; pit display</span>
+            <span class="peek__cue" aria-hidden="true">Details <svg class="icon"><use href="#i-arrow"></use></svg></span>
+          </span>
+          <span class="peek__face peek__back">
+            <span class="card__num">02 — Portfolios &amp; pit display</span>
+            <span class="peek__text">An engineering portfolio and an enterprise portfolio, judged alongside a pit
+              display that we design and build ourselves — everything from the infographics to the
+              material of the stand.</span>
+          </span>
+        </span>
+      </div></li>
+      <li class="reveal"><div class="peek peek--point" tabindex="0">
+        <span class="peek__inner">
+          <span class="peek__face peek__front">
+            <span class="card__num">03</span>
+            <span class="peek__title">Presentation</span>
+            <span class="peek__cue" aria-hidden="true">Details <svg class="icon"><use href="#i-arrow"></use></svg></span>
+          </span>
+          <span class="peek__face peek__back">
+            <span class="card__num">03 — Presentation</span>
+            <span class="peek__text">A timed in-person presentation to a panel of judges, with extra materials made
+              especially for it.</span>
+          </span>
+        </span>
+      </div></li>
+      <li class="reveal"><div class="peek peek--point" tabindex="0">
+        <span class="peek__inner">
+          <span class="peek__face peek__front">
+            <span class="card__num">04</span>
+            <span class="peek__title">Racing</span>
+            <span class="peek__cue" aria-hidden="true">Details <svg class="icon"><use href="#i-arrow"></use></svg></span>
+          </span>
+          <span class="peek__face peek__back">
+            <span class="card__num">04 — Racing</span>
+            <span class="peek__text">Run as repeat-and-average knockout rounds over a short track. The average time
+              is 1.5&nbsp;s and the world record is 0.9&nbsp;s, so everything from small aerodynamic
+              details to reaction time counts.</span>
+          </span>
+        </span>
+      </div></li>
+    </ul>
   </div>
 </section>
 
 <!-- ============ AMBITION ============ -->
-<section class="section" id="ambition">
+<section class="section section--alt" id="ambition">
   <div class="wrap">
     <header class="shead reveal">
-      <p class="shead__kicker">05 — Where this goes</p>
+      <p class="shead__kicker">04 — Where this goes</p>
       <h2 class="shead__title">The road ahead</h2>
       <p class="shead__sub">
-        We know exactly what the route looks like. We are at the start of it.
+        Here is what is in store for us. <span class="hint-inline">Select a stage for details.</span>
       </p>
     </header>
 
-    <ol class="timeline">
+    <ol class="timeline" id="road">
       <li class="tl reveal">
-        <span class="tl__date">Stage one</span>
+        <span class="tl__date">Stage one <span class="tl__when">22 Jan 2027</span></span>
         <div class="tl__body">
-          <h3>Regional Final</h3>
-          <p>Teams register for their local Regional Final and compete against other teams from
-            their area. This is where we start.</p>
+          <h3><button class="tl__toggle" type="button" aria-expanded="false" aria-controls="stage-1">
+            Regional Final
+            <svg class="icon tl__icon" aria-hidden="true"><use href="#i-chevron"></use></svg>
+          </button></h3>
+          <div class="tl__panel" id="stage-1"><div>
+            <p>Teams register for their local Regional Final (we are in the London region, which is
+              the most competitive) and compete against other teams from their area.</p>
+          </div></div>
         </div>
       </li>
       <li class="tl reveal">
         <span class="tl__date">Stage two</span>
         <div class="tl__body">
-          <h3>National Final</h3>
-          <p>Regional winners progress to the UK National Final.</p>
+          <h3><button class="tl__toggle" type="button" aria-expanded="false" aria-controls="stage-2">
+            National Final
+            <svg class="icon tl__icon" aria-hidden="true"><use href="#i-chevron"></use></svg>
+          </button></h3>
+          <div class="tl__panel" id="stage-2"><div>
+            <p>Regional winners progress to the UK National Final.</p>
+          </div></div>
         </div>
       </li>
       <li class="tl reveal tl--next">
         <span class="tl__date">Stage three</span>
         <div class="tl__body">
-          <h3>Aramco STEM Racing World Finals</h3>
-          <p>The overall National Finals winners represent their country at the World Finals, held
-            in a different location each year and usually staged alongside a Formula 1 Grand Prix.
-            That is the target.</p>
+          <h3><button class="tl__toggle" type="button" aria-expanded="false" aria-controls="stage-3">
+            Aramco STEM Racing World Finals
+            <svg class="icon tl__icon" aria-hidden="true"><use href="#i-chevron"></use></svg>
+          </button></h3>
+          <div class="tl__panel" id="stage-3"><div>
+            <p>The overall National Final winners represent their country at the World Finals, held
+              in a different location each year and usually staged alongside a Formula 1 Grand
+              Prix.</p>
+          </div></div>
         </div>
       </li>
     </ol>
@@ -419,8 +495,8 @@
     <div class="cta reveal">
       <div>
         <h3>Following our season</h3>
-        <p>This site grows as the car does — design work, test data and results will land here as
-          we make them. Instagram is where the day-to-day goes.</p>
+        <p>Our plans and designs are constantly changing — design work, test data and results will
+          land here as we make them. Follow our day-to-day updates on Instagram.</p>
       </div>
       <a class="btn btn--primary" href="https://www.instagram.com/team_swiftly/" target="_blank" rel="noopener">
         Follow @team_swiftly <svg class="icon" aria-hidden="true"><use href="#i-instagram"></use></svg>
@@ -430,14 +506,14 @@
 </section>
 
 <!-- ============ CONTACT ============ -->
-<section class="section section--alt" id="contact">
+<section class="section" id="contact">
   <div class="wrap">
     <header class="shead reveal">
-      <p class="shead__kicker">06 — Get in touch</p>
+      <p class="shead__kicker">05 — Get in touch</p>
       <h2 class="shead__title">Talk to us</h2>
       <p class="shead__sub">
-        Sponsorship, mentoring, materials, machine time, or just a question about the build — we
-        would like to hear from you.
+        Any enquiries about sponsorship, mentoring, materials, machine time, or a general
+        question — we would be honoured to receive an email.
       </p>
     </header>
 
@@ -459,14 +535,12 @@
 </section>
 
 <!-- ============ SOURCES ============ -->
-<section class="section section--slim" id="sources">
+<section class="section section--slim section--alt" id="sources">
   <div class="wrap">
     <h2 class="sources__title reveal">Sources</h2>
     <p class="note reveal">
-      Facts on this page about the STEM Racing competition — its history, format, judged categories
-      and technical limits — are summarised from the official sites and published competition
-      material. Figures are revised each season; check the current regulations before relying on
-      them.
+      Facts on this page about the STEM Racing competition are from the official sites and
+      published competition material.
     </p>
     <ul class="sources reveal">
       <li><a href="https://www.stemracing.com/" target="_blank" rel="noopener">stemracing.com <svg class="icon" aria-hidden="true"><use href="#i-ext"></use></svg></a></li>
@@ -491,10 +565,9 @@
 
     <nav class="footer__nav" aria-label="Footer">
       <a href="#team">The Team</a>
-      <a href="#approach">Our Approach</a>
       <a href="#car">The Car</a>
       <a href="#competition">The Competition</a>
-      <a href="#ambition">Ambition</a>
+      <a href="#ambition">Road Ahead</a>
       <a href="#contact">Contact</a>
     </nav>
 

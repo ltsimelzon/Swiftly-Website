@@ -47,6 +47,7 @@
       <a href="#car">The Car</a>
       <a href="#competition">The Competition</a>
       <a href="#ambition">Road Ahead</a>
+      <a href="#sponsors">Sponsors</a>
       <a href="#contact">Contact</a>
     </nav>
 
@@ -198,36 +199,22 @@
       </p>
     </header>
 
-    <figure class="cardiagram reveal">
-      <svg class="carsvg" viewBox="0 0 640 300" role="img"
-           aria-label="Annotated side profile of a STEM Racing car showing the front wing, moulded body, four wheels, rear wing, CO2 cartridge and the tether line that guides it down the track.">
-        <line x1="0" y1="238" x2="640" y2="238" stroke="currentColor" stroke-width="1.5" opacity=".28"/>
-        <line x1="0" y1="206" x2="640" y2="206" stroke="currentColor" stroke-width="1" stroke-dasharray="7 7" opacity=".3"/>
-
-        <g fill="var(--car-fill)" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round">
-          <path d="M498 118 H592 v10 H498 Z"/>
-          <path d="M520 128 V176" fill="none"/>
-          <path d="M22 208 H118 v9 H22 Z"/>
-          <path d="M44 206 L128 200 C168 196 198 188 232 176 L298 156 C328 144 362 140 398 140 L448 140 C476 146 496 162 514 180 L554 184 L556 208 Z"/>
-          <rect x="552" y="186" width="56" height="26" rx="13"/>
-          <circle cx="166" cy="204" r="30"/>
-          <circle cx="464" cy="204" r="30"/>
-        </g>
-        <g fill="none" stroke="currentColor" stroke-width="2" opacity=".55">
-          <circle cx="166" cy="204" r="12"/>
-          <circle cx="464" cy="204" r="12"/>
-        </g>
-
-        <g class="anno">
-          <line x1="70" y1="212" x2="70" y2="266"/><text x="70" y="282">Front wing</text>
-          <line x1="330" y1="148" x2="330" y2="96"/><text x="330" y="84">Model block body</text>
-          <line x1="545" y1="123" x2="545" y2="80"/><text x="545" y="68">Rear wing</text>
-          <line x1="596" y1="199" x2="620" y2="256"/><text x="636" y="272" text-anchor="end">CO₂ cartridge</text>
-          <line x1="260" y1="206" x2="244" y2="252"/><text x="242" y="268">Tether line</text>
-        </g>
-      </svg>
-      <figcaption>Not to scale — a schematic of the main features set out in the regulations. Our actual design is classified.</figcaption>
-    </figure>
+    <div class="cardesc reveal">
+      <h3 class="cardesc__title">Anatomy of the car</h3>
+      <p>
+        Seen from the side, a STEM Racing car looks like a Formula 1 car shrunk to around the size
+        of your hand. A front wing sits low at the nose, ahead of a streamlined body machined from
+        the official model block. Four wheels, two at the front and two at the rear, have to stay
+        visible from both the side and above.
+      </p>
+      <p>
+        A rear wing is mounted above the back of the car, and behind it sits the chamber that holds
+        the CO<sub>2</sub> cartridge. When the cartridge is pierced at the start, the escaping gas
+        fires the car down the track. Underneath, the car is threaded onto a nylon tether line that
+        keeps it in its lane for the full 20 metres.
+      </p>
+      <p class="cardesc__note">Our actual design is classified, so the details stay under wraps until race day.</p>
+    </div>
 
     <div class="spec">
       <div class="subhead subhead--tight subhead--row reveal">
@@ -503,11 +490,75 @@
   </div>
 </section>
 
-<!-- ============ CONTACT ============ -->
-<section class="section" id="contact">
+<!-- ============ SPONSORS ============ -->
+<section class="section" id="sponsors">
   <div class="wrap">
     <header class="shead reveal">
-      <p class="shead__kicker">05 — Get in touch</p>
+      <p class="shead__kicker">05 — Our backers</p>
+      <h2 class="shead__title">Our sponsors</h2>
+      <p class="shead__sub">
+        None of this would be possible without the organisations backing our season. Thank you for
+        believing in Team Swiftly.
+      </p>
+    </header>
+
+    <div class="sponsors">
+      <article class="sponsor reveal">
+        <a class="sponsor__logo" href="https://www.koyani.co.uk/" target="_blank" rel="noopener" aria-label="Koyani Education website">
+          <img src="images/koyani.avif" alt="Koyani Education logo" loading="lazy">
+        </a>
+        <h3 class="sponsor__name">Koyani Education</h3>
+        <div class="sponsor__text">
+          <p>
+            Koyani Education brings high-quality teaching and learning experiences from its base in
+            the UK to cities across the world. Its founding team has over two decades of collective
+            experience working within schools internationally.
+          </p>
+          <p>
+            Koyani started out primarily as a tutoring services provider, and has since expanded to
+            offer a wide range of education services. Alongside its highly demanded tutoring for
+            individual students looking to maximise their educational potential, it now offers
+            teacher training in STEM-focused topics, school performance consultation, and services
+            for international schools around the world.
+          </p>
+        </div>
+        <a class="sponsor__link" href="https://www.koyani.co.uk/" target="_blank" rel="noopener">
+          koyani.co.uk <svg class="icon" aria-hidden="true"><use href="#i-ext"></use></svg>
+        </a>
+      </article>
+
+      <article class="sponsor sponsor--eco reveal">
+        <a class="sponsor__logo" href="https://ecoapproach.co.uk/" target="_blank" rel="noopener" aria-label="Eco Approach website">
+          <img src="images/ecoapproach-logo.jpeg" alt="Eco Approach logo" width="1600" height="391" loading="lazy">
+        </a>
+        <h3 class="sponsor__name">Eco Approach</h3>
+        <div class="sponsor__text">
+          <p>
+            Eco Approach is a leading nationwide property services company, established in 2013 and
+            now the UK's largest supplier of property certificates. Every month its teams visit
+            thousands of properties across the UK. They install, service and repair boilers, carry
+            out electrical work and property certification, and fit energy efficiency measures from
+            insulation and whole-house retrofitting to heat pumps and solar power.
+          </p>
+          <p>
+            Its mission is to make homes warmer, healthier and more affordable to run. Its vision is
+            to set the standard for sustainable property services in the UK, creating better lives,
+            thriving communities and a greener planet for all.
+          </p>
+        </div>
+        <a class="sponsor__link" href="https://ecoapproach.co.uk/" target="_blank" rel="noopener">
+          ecoapproach.co.uk <svg class="icon" aria-hidden="true"><use href="#i-ext"></use></svg>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section section--alt" id="contact">
+  <div class="wrap">
+    <header class="shead reveal">
+      <p class="shead__kicker">06 — Get in touch</p>
       <h2 class="shead__title">Talk to us</h2>
       <p class="shead__sub">
         Any enquiries about sponsorship, mentoring, materials, machine time, or a general
@@ -533,7 +584,7 @@
 </section>
 
 <!-- ============ SOURCES ============ -->
-<section class="section section--slim section--alt" id="sources">
+<section class="section section--slim" id="sources">
   <div class="wrap">
     <h2 class="sources__title reveal">Sources</h2>
     <p class="note reveal">
@@ -565,6 +616,7 @@
       <a href="#car">The Car</a>
       <a href="#competition">The Competition</a>
       <a href="#ambition">Road Ahead</a>
+      <a href="#sponsors">Sponsors</a>
       <a href="#contact">Contact</a>
     </nav>
 
